@@ -1,5 +1,6 @@
 const express = require("express");
 const path = require("path");
+require("dotenv").config();
 
 const indexRouter = require("./routes/index");
 const authRoutes = require("./routes/auth.routes");
@@ -11,6 +12,7 @@ const userRoutes = require("./routes/userRoutes");
 const pollCtrl = require("./controllers/pollController");
 
 const app = express();
+
 
 /* =====================
    Middlewares de base
